@@ -11,11 +11,13 @@
 string[] GetArrayOfThreeCharacters(string[] text)
 {
     string[] result = new string[text.Length];
+    int j = 0;
     for (int i = 0; i < text.Length; i++)
     {
         if (text[i].Length <= 3)
         {
-            result [i] = text[i];
+            result [j] = text[i];
+            j++;
         }
     }
     return result;
