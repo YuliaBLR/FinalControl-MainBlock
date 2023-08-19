@@ -10,15 +10,15 @@
 
 string[] GetArrayOfThreeCharacters(string[] text)
 {
-    string[] temp = new string[text.Length];
+    string[] result = new string[text.Length];
     for (int i = 0; i < text.Length; i++)
     {
         if (text[i].Length <= 3)
         {
-            temp[i] = text[i];
+            result [i] = text[i];
         }
     }
-    return temp;
+    return result;
 }
 
 //---------------------------------------------------
